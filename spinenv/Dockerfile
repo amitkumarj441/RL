@@ -10,7 +10,7 @@ RUN apt install -y --no-install-recommends \
     python3.5 \ 
     python3-pip \
     && pip3 install --no-cache-dir --upgrade pip setuptools \
-    && echo "alias python='python3" >> /root/.bash_aliases && echo ""alias pip='pip3'" >> /root/.bash_aliases
+    && echo "alias python='python3'" >> /root/.bash_aliases && echo "alias pip='pip3'" >> /root/.bash_aliases
 
 # DS dependencies
 RUN apt-get install -y --no-install-recommends libjpeg-dev zlib1g-dev && \
